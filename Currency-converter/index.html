@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter Dashboard</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 class="heading text-center mb-4">Currency Converter Dashboard</h1>
+        <div class="card shadow-lg p-4 main bg-dark text-white">
+            <div class="form-group">
+                <label for="amount" class="font-weight-bold">Amount to Convert:</label>
+                <input type="number" id="amount" class="form-control" placeholder="Enter amount" required />
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="fromCurrency" class="font-weight-bold">From:</label>
+                    <select id="fromCurrency" class="currency-select custom-select">
+                        <option value="" disabled selected>Select Currency</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="toCurrency" class="font-weight-bold">To:</label>
+                    <select id="toCurrency" class="currency-select custom-select">
+                        <option value="" disabled selected>Select Currency</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success btn-lg convert m-2" type="button" id="convert">Convert</button>
+                <button class="btn btn-danger btn-lg reset m-2" type="button" id="reset">Reset</button>
+            </div>
+            <div id="finalAmount" class="text-center mt-4">
+                <h2 class="text-warning">Converted Amount: <span class="finalValue"></span></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

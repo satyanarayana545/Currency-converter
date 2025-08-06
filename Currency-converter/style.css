@@ -1,0 +1,57 @@
+body {
+    background-color: #ad1717;
+    background-image: url('global-currency-background_115579-405.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.main {
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#finalAmount {
+    display: none;
+}
+
+.currency-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    background: #2c2c2c;
+    color: #f5f5f5;
+}
+
+.btn {
+    width: 160px;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+#finalAmount h2 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    color: #ffc107;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
